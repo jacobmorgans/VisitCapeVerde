@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cape Verde - Packing List</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jacob Morgan" />
+    <meta name="description" content="Cape Verde" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="packinglist.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header class="main-title">
+            <h1>Visit Cape Verde</h1>
+        </header>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a target="_blank" href="homepage.html">Home</a></li>
+                <li><a target="_blank" href="islandtours.html">Island Tours</a></li>
+                <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                <li><a target="_blank" href="hotels.html">Hotels and Restaurants</a></li>
+                <li><a target="_blank" href="packinglist.html">Packing List</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h3>Cape Verde Packing List</h3>
+
+            <p>Below is a packing list where you can add items you wish to take on your travels. Feel free to fill it with as many items as you wish.</p>
+
+            <label for="item">Enter an Item you want to take</label>
+            <input type="text" name="item" id="item">
+            <button>Add</button>
+
+            <ul>
+            </ul>
+
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; all rights reserved 2020</p>
+        </footer>
+    </div>
+    <script>
+        const list = document.querySelector('.content');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        button.onclick = function() {
+            let myItem = input.value;
+            input.value = '';
+
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');
+
+            listItem.appendChild(listText);
+            listText.textContent = myItem;
+            listItem.appendChild(listBtn);
+            listBtn.textContent = 'delete';
+            list.appendChild(listItem);
+
+            listBtn.onclick = function(e) {
+                list.removeChild(listItem);
+            }
+
+            input.focus();
+        }
+
+    </script>
+
+</body>

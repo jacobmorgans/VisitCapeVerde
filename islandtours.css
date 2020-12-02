@@ -1,0 +1,94 @@
+body {
+    color: #000000;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-image: url(images/turtle.jpg);
+    background-size: 1920px 1080px;
+
+
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 26px;
+    background-image: url(images/sand.jpg);
+    background-size: 1920px 800px;
+}
+
+.content-r {
+    grid-area: content-r;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: 	#e6e6e6;
+
+}
+
+.content-l {
+    grid-area: content-l;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: #e6e6e6;
+}
+
+.main-nav {
+    grid-area: nav;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: #e6e6e6;
+}
+
+
+.main-footer {
+    grid-area: footer;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: #e6e6e6;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content-r"
+        "content-l"
+        "footer";
+}
+
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 3fr 3fr;
+        grid-template-areas:
+            "header  header"
+            "nav     nav"
+            "content-l content-r"
+            "footer      footer";
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 5px;
+        padding: 5px;
+    }
+li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 18px;
+}

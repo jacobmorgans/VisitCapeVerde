@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTTP Exercise</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="your-name" />
+    <meta name="description" content="HTTP and Security Exercise" />
+    <link href="http_exercise.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1>HTTP and Security Exercise</h1>
+        <h2>1. What is the Hypertext Transfer Protocol (HTTP)</h2>
+        <P>Hypertext transfer protocol (HTTP) is a communications protocol used for transferring documents like HTML. It is the main form of data exchange on the web and it works in a client server model which means requests are made by a user.</P>
+    
+    <h2>2. Why is HTTP called a stateless protocol?</h2>
+    <P>HTTP is called a stateless protocol because the server does not hold any information between two different requests. </P>
+    <h2>3.	Describe the three phases of establishing a session using client-server protocols such as HTTP</h2>
+     <P>The first phase of establishing a connection is to initiate it in the transport layer which is usually transmission control protocol (TCP). Once this has been initiated and a connection has been made the client can then send the request to the server. The server will not send data unless there is a request. </P>
+    <h2>4.	Describe the parameters on a get and post request.</h2>
+     <P>Get requests data from the server and post sends data to the server.</P>
+    <h2>5.	What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h2>
+     <P>Status code 200 means that the request was successful, and the information has been returned. Status code 404 means that the file has not been found and the server could not find the information in the request. </P>
+    <h2>6.	What are HTTP cookies? Give an example.</h2>
+     <P>HTTP cookies are information about a website that is stored on the client’s computer. They can be used to save personalised information, manage logins, shopping carts and track the user’s behaviour. </P>
+    <h2>7.	Why are cookies a security issue?</h2>
+     <P>Cookies can be viewed and are visible. They can also be used for cross site tracking. Cookies can build a profile of the user with all their information which can be a risk to their privacy. </P>
+    <h2>8.	Describe session hijacking and XSS</h2>
+     <P>Session hijacking is where the user’s session is taken over by a hacker. This is done by the attacker having access to your session ID. It gives access to whatever the user was on and have the same privileges as the user. XSS stands for cross site scripting and it is a form of attack where code is injected into a website. This is done so that the attacker can compromise their interaction with the website and have full control and access of the data.</P>
+    <h2>9.	Describe Cross-site request forgery (CSRF)</h2>
+     <P>CSRF is a form of attack where the user is tricked in to performing an action they did not mean to perform. An example of this could be the attacker could change the users email address or password. The attacker uses cookies to identify the user as there is no other way of identifying the user on the site.</P>
+    <h2>10.	What are Cross-site HTTP requests (CORS) and what requests use CORS?</h2>
+     <P>CORS requests is a system that allows a browser to load information from another source. Information like images, and style sheets can be requested cross site. When the browser requests to the server that is hosting the resources, it will send a pre-flight request. A pre-flight request ensures that server will allow the request. </P>
+        </section>
+</body>
